@@ -5,6 +5,7 @@ import com.ynov.kotlin.rickmorty.data.model.RMEpisode
 
 class CacheManager {
 
+    // TODO on préfère utiliser l'interface List pour le type et emptyList() pour initialiser une liste vide
     var charactersList : MutableList<RMCharacter> = mutableListOf()
     var episodesList : MutableList<RMEpisode> = mutableListOf()
     var characterDetail: MutableList<RMCharacter> = mutableListOf()

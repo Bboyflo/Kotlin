@@ -18,6 +18,7 @@ import kotlinx.android.synthetic.main.fragment_list_characters.*
 
 class ListCharacterFragment : Fragment() {
 
+    // TODO en private ça peut être pas mal pour ces variables
     lateinit var characterListAdapter: CharacterListAdapter
     lateinit var characterListViewModel: CharacterListViewModel
 

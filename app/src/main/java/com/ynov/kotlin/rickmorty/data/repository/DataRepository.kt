@@ -11,6 +11,7 @@ class DataRepository (
     private val cacheManager: CacheManager
 ){
     fun retrieveCharacterList(): Single<List<RMCharacter>> {
+        // TODO on peut mettre le return une seule fois avant le if pour otimiser
         if (cacheManager.charactersList.isNotEmpty())
             return Single.just(cacheManager.charactersList)
         else
